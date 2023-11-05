@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel='stylesheet' type="text/css" href="./blackjack.css">
+</head>
+<body>
+    <div>
+        <h1>Welcome to my table</h1>
+        
+        <div id="dealer">  
+            <h2>Dealer Hand</h2>
+            <div class="hand" id="dealerHand"></div>
+        </div>
+
+        <div id="playerHands">
+            <!--Player 1 Hand-->
+            <div id="playerHands">
+                <h2>Player 1</h2>
+                <div class="hand" id="playerOneHand"></div>
+                <button type="button" id="playerHit" value="Hit" onclick="Hit()">Hit</button>
+                <button type="button" id="playerStand" value="Stand" onclick="Stand()">Stand</button>
+            
+            <!--Player 2 Hand-->
+                <h2>Player 2</h2>
+                <div class="hand" id="playerTwoHand"></div>
+                <button type="button" id="playerHit" value="Hit" onclick="Hit()">Hit</button>
+                <button type="button" id="playerStand" value="Stand" onclick="Stand()">Stand</button>
+            </div>
+        </div>
+
+        <h3>Dealer Score:</h3>
+        <div class="dealerScore"></div>
+        <h3>Player 1 Score:</h3>
+        <div class="playerOneScore"></div>
+        <h3>Player 2 Score:</h3>
+        <div class="playerTwoScore"></div>
+        <h3>Game Status</h3>
+        <div class="gameStatus"></div>
+        <button type="button" id="btnNewGame" value="New Game" onclick="NewGame()">New Game</button>
+    </div>
+    <script src="./blackjack.js"></script>
+</body>
+</html>
